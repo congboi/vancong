@@ -1,0 +1,192 @@
+:root {
+  --primary-color: #4daf54;
+}
+h1 {
+  text-align: center;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+}
+main {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .card {
+  margin-top: 120px auto;
+  width: 230px;
+  height: 310px;
+  background-color: #272d40;
+  position: relative;
+  transform: translate(-50%, -20%);
+  padding: 20px;
+  border-radius: 25px;
+  color: white;
+  margin-left: 130px;
+}
+.card_traitim,
+.card_giohang {
+  cursor: pointer;
+  position: absolute;
+  font-size: 20px;
+}
+.card_giohang {
+  left: unset;
+  right: 20px;
+}
+.card_anh {
+  text-align: center;
+}
+.card_anh .alo {
+  width: 150px;
+  height: 110px;
+  object-fit: cover;
+  margin-top: 50px;
+}
+.card_tieude,
+.card_gia {
+  font-size: 15px;
+  font-weight: bold;
+  text-align: center;
+}
+.card_tieude {
+  color: var(--primary-color);
+}
+.card_kichco span {
+  align-items: center;
+}
+.card_kichco span {
+  background-color: gray;
+  padding-left: 5px;
+  padding-right: 5px;
+  border-radius: 4px;
+}
+.card_kichco {
+  margin-top: 40px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card_mau {
+  margin-top: 10px;
+  align-items: center;
+  display: flex;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card_mau span {
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.maudo {
+  background-color: red;
+  width: 15px;
+  height: 15px;
+}
+.mauden {
+  background-color: black;
+  width: 15px;
+  height: 15px;
+}
+.mauxanh {
+  background-color: blue;
+  width: 15px;
+  height: 15px;
+}
+.card_action {
+  margin-top: 15px;
+}
+.card_action button {
+  background-color: var(--primary-color);
+  color: white;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  border: none;
+  outline: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+.card:hover .card_anh {
+  transform: translateY(-70px) rotate(-20deg);
+  transition: 0.5s;
+}
+.card:hover .card_gia {
+  transform: translate(-80px, -40px);
+  transition: 0.5s;
+}
+.card:hover .card_tieude {
+  transform: translate(-50px, -40px);
+  transition: 0.5s;
+}
+.card_kichco {
+  margin-top: 180px;
+}
+.card_kichco,
+.card_mau,
+.card_action {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transition-delay: 0.4s;
+}
+.card:hover .card_kichco,
+.card:hover .card_mau,
+.card:hover .card_action {
+  visibility: visible;
+  opacity: 100;
+}
+.card:hover .card_kichco {
+  margin-top: 0px;
+}
+.card_action button:hover {
+  transform: scale(0.9);
+}
+.card_mau span:hover {
+  transform: scale(0.9);
+}
+.card {
+  margin-top: 150px;
+}
+header ul {
+  display: flex;
+  background-color: yellowgreen;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+header ul li {
+  margin-left: 10px;
+  margin-right: auto;
+  list-style-type: none;
+  text-align: center;
+  font-size: 30px;
+}
+header ul li a {
+  text-decoration: none;
+}
+header ul input {
+  border-radius: 5px;
+  width: 250px;
+  height: 30px;
+  border: none;
+  text-transform: capitalize;
+  margin-right: 30px;
+}
+footer {
+  margin-top: 30px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 10px 10px 10px 10px;
+}
+header ul li :hover {
+  background-color: gray;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+}
